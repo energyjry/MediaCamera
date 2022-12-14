@@ -5,3 +5,18 @@
 1.ffmpeg
 2.opencv
 
+
+代码结构：
+DecodeAac.cpp:		解码AAC语音流为PCM格式
+DecodeH264.cpp:		解码H264视频流为YUV420P格式
+DecoceH265.cpp：	解码H265视频流为YUV420P格式
+DecodeMjpeg.cpp:	解码Mjpeg视频流为YUV420P格式
+EncodeAac.cpp:		编码PCM语音流为AAC格式
+EncodeH264.cpp：	编码YUV420P格式图像为H264视频流
+main.cpp：			主程序入口，测试功能
+Mp4Reader.cpp:		读取Mp4文件获取H264视频流和AAC语音流
+OpencvReader.cpp	使用OpenCV方式获取YUV420P格式图像
+RtspReader.cpp		读取Rtsp地址获取H264视频流和AAC语音流
+UsbReader.cpp		读取USB摄像头获取Mjpeg视频流和AAC语音流
+YuvConverter.cpp	YUV420格式图像转换，变换像素
+
